@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css"
+import Menu from "./component/Menu";
+import Simple from "./component/Simple";
+import ComponentInt from "./component/CompoundInt";
+import Bmi from "./component/BodyMi";
+import LoanInt from "./component/LoanInt";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <BrowserRouter>
+          <Menu/>
+          <Routes>
+                <Route path={`/`} element={<Simple/>} />
+                <Route path={`/simple/interest`} element={<Simple/>} />
+                <Route path={`/compound/interest`} element={<ComponentInt/>} />
+                <Route path={`/Bmi`} element={<Bmi/>} />
+                <Route path={`/loan/interest`} element={<LoanInt/>} />
 
-export default App;
+          </Routes>
+      </BrowserRouter>
+  )
+}
+export default App
+

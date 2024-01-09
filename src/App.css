@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+  background-color: rgba(128, 255, 0, 0.66);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav {
   display: flex;
-  flex-direction: column;
+  background-color: rgba(15, 15, 196, 0.63);
+  color: #fff;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+header nav .logo, header nav div{
+  display: flex;
+  text-decoration: none;
+  color: #f01212f0;
+  font-size: 1.5rem;
+  font-weight: 40px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ 
+  .link{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+     align-items: center;
+    justify-content: space-evenly;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .link:hover{
+    color: orangered;
   }
-}
+
+  /* home pages */
+  div .home{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .title {
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  .container1{
+    background-color: rgba(234, 123, 145, 0.797);
+    text-align: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 10px 20px 10px 500px;
+    padding: 40px;
+    padding: 40px;
+    height: 500px;
+    width: 550px;
+    color: #fff;
+  }
+
+  form .group{
+    color: #fff;
+    font-size:1.5rem;
+  }
+  form .form-item{
+    color: #fff;
+    font-size:1.5rem;
+  }
+
+  form .group  input {
+    height: 40px;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+  }
+  form .form-item input{
+    height: 40px;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+  }
+   .btn{
+    height: 40px;
+    padding: 5px 50px;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgba(15, 236, 15, 0.751);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+  } 
+
+  .btn:hover, .btn:active{
+    background-color: rgb(59, 119, 230);
+    color: orangered;
+  }
